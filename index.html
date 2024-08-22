@@ -13,7 +13,18 @@
         var markmass = 78;
         var markheigh = 1.69;
         var johnmass = 92;
-        var johnmass = 1.95;
+        var johnheigh = 1.76;
+
+        BMIMark = markmass / (markheigh ** 2);
+        console.log(BMIMark);
+
+        BMIjohn = johnmass / (johnheigh ** 2);
+        console.log(BMIjohn);
+
+        var markheighBMI = 0
+        if (BMIMark > BMIjohn)
+            markheighBMI = 1;
+        console.log(markheighBMI ? "Mark has a higher BMI than John" : "John has a higher BMI than Mark");
     </script>
 
 </body>
