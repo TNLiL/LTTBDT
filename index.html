@@ -8,24 +8,51 @@
 </head>
 
 <body>
-    <!-- Coding Challenge #1 -->
+
     <script>
-        var markmass = 78;
-        var markheigh = 1.69;
-        var johnmass = 92;
-        var johnheigh = 1.76;
+        // Coding Challenge #1&2
+        // var markmass = 78;
+        // var markheigh = 1.69;
+        // var johnmass = 92;
+        // var johnheigh = 1.76;
 
-        BMIMark = markmass / (markheigh ** 2);
-        console.log(BMIMark);
+        // BMIMark = markmass / (markheigh ** 2);
+        // console.log(BMIMark);
 
-        BMIjohn = johnmass / (johnheigh ** 2);
-        console.log(BMIjohn);
+        // BMIjohn = johnmass / (johnheigh ** 2);
+        // console.log(BMIjohn);
 
-        var markheighBMI = 0
-        if (BMIMark > BMIjohn)
-            markheighBMI = 1;
-        console.log(markheighBMI ? "Mark has a higher BMI than John" : "John has a higher BMI than Mark");
-        console.log(markheighBMI ? "BMIMark is (" + BMIMark.toFixed(2) + "), it has a higher BMI than BMIJohn (" + BMIjohn.toFixed(2) + ")" : "BMIJohn is a (" + BMIjohn.toFixed(2) + "), it has a higher BMI than BMIMark(" + BMIMark.toFixed(2) + ")");
+        // var markheighBMI = 0;
+        // if (BMIMark > BMIjohn)
+        //     markheighBMI = 1;
+        // console.log(markheighBMI ? "Mark has a higher BMI than John" : "John has a higher BMI than Mark");
+        // console.log(markheighBMI ? "BMIMark is (" + BMIMark.toFixed(2) + "), it has a higher BMI than BMIJohn (" + BMIjohn.toFixed(2) + ")" : "BMIJohn is a (" + BMIjohn.toFixed(2) + "), it has a higher BMI than BMIMark(" + BMIMark.toFixed(2) + ")");
+
+        // Coding Challenge #3
+        var dolphinsscore = [97, 112, 101];
+        var koalasscore = [109, 95, 123];
+        let sumdol = 0;
+        let sumkoala = 0;
+        dolphinsscore.forEach(element => {
+            sumdol += element;
+
+        });
+        koalasscore.forEach(element => {
+            sumkoala += element;
+
+        });
+        var avedophin = sumdol / dolphinsscore.length;
+        var avekoala = sumkoala / koalasscore.length;
+        console.log(avedophin);
+        console.log(avekoala);
+
+
+        if (avedophin > avekoala)
+            console.log("Team dophins is a winner")
+        else if (avedophin < avekoala)
+            console.log("Team koalas is a winner")
+        else
+            console.log("both of team has the same average score")
     </script>
 
 </body>
