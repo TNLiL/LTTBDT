@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var dolphinsscore = [85, 54, 41];
+        var koalasscore = [23, 34, 27];
+        calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3
+        avedolphinscore = calcAverage(...dolphinsscore)
+        avekoalascore = calcAverage(...koalasscore)
+        console.log(avedolphinscore);
+        console.log(avekoalascore);
+        checkWinner = (ave1, ave2) => {
+            if (ave1 >= ave2 * 2)
+                console.log("Team Dolphin is winner with score is " + ave1 + " tailler than " + ave2 + "")
+
+            else if (ave2 >= ave1 * 2)
+                console.log("Team Koala is winner with score is " + ave2 + " tailler than " + ave1 + "")
+            else
+                console.log("No team win")
+        }
+        checkWinner(avedolphinscore, avekoalascore);
+    </script>
+</body>
+
+</html>
